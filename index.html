@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header  -->
+
+    <header>
+      <h1>
+        <a href="#">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+        </a>
+      </h1>
+    </header>
+
+    <!-- main  -->
+    <main>
+      <!-- left section  -->
+      <div class="container__left-section">
+        <!-- bill section  -->
+        <h4>Bill</h4>
+        <div class="input">
+          <img src="./images/icon-dollar.svg" alt="dollar icon" />
+          <input type="number" />
+        </div>
+
+        <!-- tip tipPercentage  -->
+        <div class="tip__percentage">
+          <h4>Select Tip %</h4>
+          <div class="container__percentage__button">
+            <div class="preset">
+              <p><b>5%</b></p>
+            </div>
+            <div class="preset">
+              <p><b>10%</b></p>
+            </div>
+            <div class="preset">
+              <p><b>15%</b></p>
+            </div>
+            <div class="preset">
+              <p><b>25%</b></p>
+            </div>
+            <div class="preset">
+              <p><b>50%</b></p>
+            </div>
+            <div class="custom">
+              <input type="text" form type="number" placeholder="Custom" />
+            </div>
+          </div>
+        </div>
+
+        <!-- number of people  -->
+        <div class="container__number-people">
+          <h4>Number of People</h4>
+          <div class="input">
+            <img src="./images/icon-person.svg" alt="user icon" />
+            <input type="number" />
+          </div>
+        </div>
+      </div>
+
+      <!-- right section  -->
+      <div class="container__right-section">
+
+        <!-- tip amount  -->
+        <div class="tip__amount">
+          <div class="description">
+            <h4>Tip Mount</h4>
+            <p>/ person</p>
+          </div>
+          <span id="total__out">$0.00</span>
+        </div>
+
+        <!-- total out  -->
+        <div class="total">
+          <div class="description">
+            <h4>Person</h4>
+            <p>/ person</p>
+          </div>
+          <span id="total__out">$0.00</span>
+        </div>
+
+        <!-- button reset  -->
+        <div class="reset__button">
+          <button>Reset</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
