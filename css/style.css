@@ -31,11 +31,11 @@ header {
     margin-top: 20vh;
 }
 
+
 /* logo  */
 
 .logo {
     margin-bottom: 40px;
-   text-align: center;
 }
 
 
@@ -100,7 +100,6 @@ main {
     height: 35px;
     margin: 0 10px 10px 0;
     border-radius: 5px;
-    color: white;
 }
 
 ::placeholder {
@@ -108,7 +107,13 @@ main {
 }
 
 .preset {
+    color: white;
     background-color: var(--Verydarkcyan);
+}
+
+.preset:hover {
+    color: var(--Verydarkcyan);
+    background-color: var(--Strongcyan);
 }
 
 .custom input{
@@ -118,6 +123,7 @@ main {
 .custom input:focus{
     outline: none;
 }
+
 
 /* right section */
 
@@ -138,7 +144,7 @@ main {
 
 .container__right-section > div p {
     font-size: 14px;
-    color: var(--Strongcyan);
+    color: var(--Darkgrayishcyan);
 }
 
 .container__right-section > div span {
@@ -153,6 +159,32 @@ main {
 
 /* button reset  */
 
-.reset__button {
-    margin: 20px auto;
+.reset__button > button {
+    width: 100%;
+    height: 40px;
+    margin-top: 55%;
+    border: none;
+    border-radius: 4px;
+    background-color: #0d686d;
+    color: var(--Verydarkcyan);
+}
+
+.reset__button > button:hover{
+    background-color: var(--Strongcyan);
+}
+
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 375px) {
+    main {
+        display: block;
+        width: 400px;
+    }
+    .tip__amount {
+        margin-bottom: 20px;
+    }
+    .reset__button > button {
+        margin-top: 50px;
+    }
 }
