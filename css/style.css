@@ -44,7 +44,7 @@ header {
 main {
     margin: 0 auto 100px auto;
     border-radius: 30px;
-    width: 800px;
+    width: 700px;
     box-shadow: 1px solid black; 
     display: flex;
     background-color: var(--White);

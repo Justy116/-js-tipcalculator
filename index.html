@@ -10,11 +10,11 @@
     <!-- header  -->
 
     <header>
-      <!-- <h1>
+      <h1>
         <a href="#">
           <img class="logo" src="./images/logo.svg" alt="logo" />
         </a>
-      </h1> -->
+      </h1>
     </header>
 
     <!-- main  -->
@@ -25,7 +25,7 @@
         <h4>Bill</h4>
         <div class="input">
           <img src="./images/icon-dollar.svg" alt="dollar icon" />
-          <input type="number" />
+          <input class="input__bill" type="number" />
         </div>
 
         <!-- tip tipPercentage  -->
@@ -33,22 +33,22 @@
           <h4>Select Tip %</h4>
           <div class="container__percentage__button">
             <div class="preset">
-              <p><b>5%</b></p>
+              <p><b id="5">5%</b></p>
             </div>
             <div class="preset">
-              <p><b>10%</b></p>
+              <p><b id="10">10%</b></p>
             </div>
             <div class="preset">
-              <p><b>15%</b></p>
+              <p><b id="15">15%</b></p>
             </div>
             <div class="preset">
-              <p><b>25%</b></p>
+              <p><b id="25">25%</b></p>
             </div>
             <div class="preset">
-              <p><b>50%</b></p>
+              <p><b id="50">50%</b></p>
             </div>
             <div class="custom">
-              <input type="text" form type="number" placeholder="Custom" />
+              <input class="custom__input" type="text" form type="number" placeholder="Custom" />
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
           <h4>Number of People</h4>
           <div class="input">
             <img src="./images/icon-person.svg" alt="user icon" />
-            <input type="number" />
+            <input class="input__people" type="number" />
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
             <h4>Tip Mount</h4>
             <p>/ person</p>
           </div>
-          <span id="total__out">$0.00</span>
+          <span>$<span class="tip-mount-out">0.00</span></span>
         </div>
 
         <!-- total out  -->
@@ -81,7 +81,7 @@
             <h4>Person</h4>
             <p>/ person</p>
           </div>
-          <span id="total__out">$0.00</span>
+          <span>$<span class="total-out">0.00</span></span>
         </div>
 
         <!-- button reset  -->
@@ -90,5 +90,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>
