@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
-
 /* GENERAL  */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -171,6 +171,13 @@ main {
 
 .reset__button > button:hover{
     background-color: var(--Strongcyan);
+}
+
+/* border if value is min 0 */
+/* add class input  */
+
+.border {
+    border: 1px solid red;
 }
 
 
